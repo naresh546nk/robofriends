@@ -34,7 +34,7 @@ render(){
         <div>
             
             <div className="tc">
-                <h1>Robofriends</h1>
+                <h1 > <div className="shadow">ℝ𝕆𝔹𝕆𝔽ℝ𝕀𝔼ℕ𝔻𝕊</div></h1>
                 <SearchRobot  searchChange={this.searchChange} />
             </div>
             
