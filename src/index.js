@@ -2,11 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-//import Card from './components/Card.js'
-
-import {robots} from './components/RobotList'
-
-import CardList from './components/CardList'
 import App from './components/App'
 
 import  'tachyons'
