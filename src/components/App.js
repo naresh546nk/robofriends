@@ -4,6 +4,8 @@ import CardList from './CardList'
 
 import SearchRobot from './SearchRobot'
 
+import  ErrorBoundary from './ErrorBoundary'
+
 import './App.css'
 
 
@@ -39,7 +41,7 @@ render(){
     });
 
     if(this.state.robots.length===0){
-        return <div class="loader"></div>
+        return <div className="loader"></div>
 
          
     }
@@ -51,7 +53,12 @@ render(){
                 <SearchRobot  searchChange={this.searchChange} />
             </div>
             
+            <ErrorBoundary>
             <CardList robots={filterRobot}/>
+
+            </ErrorBoundary>
+               
+            
          
         </div>
       
